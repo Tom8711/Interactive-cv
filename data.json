@@ -1,0 +1,40 @@
+{
+  "hobby":{
+    "foto":"/image/klimtom.jpg",
+    "tekst":[
+      "<h1 id='scroll-to'>Hier een titel</h1><p>Hier typen we alle tekst die we willen. Wellicht kunnen we alineas toevoegen?</p><p>De volgende alinea",
+      "Hello new line!</p>" 
+    ]
+  },
+  "it":{
+    "foto":"/image/klimtom.jpg",
+    "tekst":[
+      "<h1 id='scroll-to'>IT titel</h1>",
+      "<p>Hier komt tekst over mijn it bestaan</p>"
+    ]
+  },
+  "werk":{
+    "foto":"/image/tijdlijn.png",
+    "tekst":[
+      "<h1 id='scroll-to'>werk titel</h1>",
+      "<p>Lekker werken hoor!</p>"
+    ]
+  },
+  "overmij":{
+    "foto":"/image/mijnklasse.png",
+    "tekst":[
+      "<h1 id='scroll-to'>Over mijzelf</h1>",
+      "<p>Ik ben Tom.</p><p>In het klassediagram staan wat kenmerken van mij.</p>",
+      "<p>Wat ik later wil worden? Eigenlijk heb ik geen idee. Ik ben steeds op zoek naar een nieuwe uitdaging die mij voldoende weet te prikkelen. Mijn gevoel zegt mij dat ik dit binnen de IT ga vinden.</p>",
+      "<p>Ik ben zeer gedreven en wil graag bijleren. Het geeft mij een kick als ik processen kan verbeteren. Ik werk nauwkeurig en zorg dat alles op tijd af is. </p>",
+      "<p>Verder zoek ik leuke collegas die ook buiten werktijden zo nu en dan wat leuks doen samen.</p>"
+    ]
+  },
+  "interesses":{
+    "foto":"/image/klimtom.jpg",
+    "tekst":[
+      "<h1 id='scroll-to'>Misschien interesses?</h1>",
+      "<p>Wat vind ik leuke onderwerpen???</p>"
+    ]
+  }
+}
