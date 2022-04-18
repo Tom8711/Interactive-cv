@@ -1,27 +1,34 @@
-function generateTextHobby(){
+function generateTextPort(){
   fetch("./data.json")
   .then(response => {
     return response.json();
   })
   .then(jsondata => {
-    document.getElementById("text-in").innerHTML =`\ 
+    document.getElementById("text-in").innerHTML =`\
     <div class="container-fluid">\
       <div class="row">\
-        <div class="col-xl-6 col-lg-6 col-md-6">\
-          <img src="${jsondata.hobby.foto}" alt="Plaatje laad niet" class="img-fluid">\
+        <div class="col">\
+          <img src="${jsondata.portfolio.foto1}" alt="Plaatje laad niet" class="img-fluid">\
         </div>\
-        <div class="col-xl-6 col-lg-6 col-md-6" style='height:23.7cm'>\
-          ${jsondata.hobby.tekst.join('\n')}\
+        <div class="col">\
+          ${jsondata.portfolio.tekst.join('\n')}\
+      </div>\
+      <div class="row">\
+        <div class="col">\
+          ${jsondata.portfolio.tekst.join('\n')}\
+        </div>\
+        <div class="col">\
+          <img src="${jsondata.portfolio.foto3}" alt="Plaatje laad niet" class="img-fluid">\
           <a href='#top'><button type='button'>Scroll naar boven</button></a>\
         </div>\
       </div>\
     </div>`
   })
-  .then(()=>{
-    setTimeout(()=>{
-    document.getElementById("scroll-to").scrollIntoView();
-  }, 100)
-  })
+  // .then(()=>{
+  //   setTimeout(()=>{
+  //   document.getElementById("scroll-to").scrollIntoView();
+  // }, 100)
+  // })
 }
 
 function generateTextIt(){
@@ -33,10 +40,10 @@ function generateTextIt(){
     document.getElementById("text-in").innerHTML =`\ 
     <div class="container-fluid">\
       <div class="row">\
-        <div class="col-xl-6 col-lg-6 col-md-6">\
-          <img src="${jsondata.it.foto}" alt="Plaatje laad niet" class="img-fluid">\
+        <div class="col">\
+          <img src="${jsondata.portfolio.foto}" alt="Plaatje laad niet" class="img-fluid">\
         </div>\
-        <div class="col-xl-6 col-lg-6 col-md-6" style='height:23.7cm'>\
+        <div class="col" style='height:23.7cm'>\
           ${jsondata.it.tekst.join('\n')}\
           <a href='#top'><button type='button'>Scroll naar boven</button></a>\
         </div>\
@@ -80,10 +87,10 @@ function generateTextOverMij(){
     document.getElementById("text-in").innerHTML =`\ 
     <div class="container-fluid">\
       <div class="row">\
-        <div class="col-xl-6 col-lg-6 col-md-6">\
+        <div class="col">\
           <img src="${jsondata.overmij.foto}" alt="Plaatje laad niet" class="img-fluid" style="padding-left:3cm">\
         </div>\
-        <div class="col-xl-6 col-lg-6 col-md-6">\
+        <div class="col">\
           ${jsondata.overmij.tekst.join('\n')}\
           <a href='#top'><button type='button'>Scroll naar boven</button></a>\
         </div>\
