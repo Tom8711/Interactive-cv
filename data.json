@@ -1,11 +1,27 @@
 {
   "portfolio":{
-    "foto1":"/image/knights1.png",
+    "foto1":"/image/wasteless.png",
     "foto2":"/image/knights2.png",
-    "foto3":"/image/alien.png",
-    "tekst":[
-      "<h1 id='scroll-to'>Hier een titel</h1><p>Hier typen we alle tekst die we willen. Wellicht kunnen we alineas toevoegen?</p><p>De volgende alinea",
-      "Hello new line!</p>" 
+    "foto3":"/image/alien2.png",
+    "tekst1":[
+      "<h1 id='scroll-to'>Wasteless</h1><p>Deze webapp laat gebruikers een voorraadkast van boodschappen bijhouden. Heb je iets niet meer nodig of dreigt het te bederven?",
+      "Met een druk op de knop kan je deze aanbieden aan andere gebruikers!</p><p>Deze full-stack applicatie is in team verband in een paar sprints gebouwd tijdens de bootcamp",
+      "van het Young Capital traineeship. De frontend is geschreven in html/javascript, de back-end in java met het spring framework die een koppeling maakt naar een mySQL server.</p>",
+      "<p><a href='https://github.com/Tom8711/yc2202wasteless_frontend.git'>Github: Wasteless frontend</a></p>",
+      "<p><a href='https://github.com/Tom8711/yc2202wasteless.git'>Github: Wasteless backend</a></p>" 
+    ],
+    "tekst2":[
+      "<h1>Knight's Quest</h1><p>De ridder moet alle sleutels pakken en de weg naar de uitgang bereiken zonder gepakt te worden door de wachters.</p>",
+      "<p>Dit spel bestaat uit twee verschillende levels. Het tweede level bevat andere functionaliteit zoals het wegduwen van objecten</p>",
+      "<p>Mijn eerste kleine project in C#. Deze heb ik gemaakt als introductie opdracht voor het Young Capital traineeship.</p>",
+      "<p><a href='https://github.com/Tom8711/Knight-Quest.git'>Github: Knight's Quest</a></p>"
+    ],
+    "tekst3":[
+      "<h1>Alien Invasion</h1><p>Een Space-Invaders clone gemaakt in Python met Pygame.</p>",
+      "<p>Dit spel kan ingesteld worden op drie verschillende moeilijkheidsgraden. Dit beïnvloedt de snelheid van de aliens, het aantal schilden waarmee gestart wordt",
+      "en het aantal kogels dat op de speler af komt. De highscore wordt in een json bestand opgeslagen en zo bewaard.</p>",
+      "<p>Dit is een hobby project geweest en mijn eerste ontmoeting met python.</p>",
+      "<p><a href='https://github.com/Tom8711/Alien-Invasion.git'>Github: Alien Invasion</a></p>"
     ]
   },
   "it":{
@@ -26,7 +42,7 @@
     "foto":"/image/mijnklasse.png",
     "tekst":[
       "<h1 id='scroll-to'>Over mijzelf</h1>",
-      "<p>Ik ben Tom.</p><p>Hiernaast staat een klasse diagram. Een klasse van mij zou onder andere de volgende kenmerken bevatten</p>",
+      "<p>Ik ben Tom.</p><p>Hiernaast staat een klasse diagram. Een klasse van mij zou onder andere de volgende kenmerken bevatten.</p>",
       "<p>Wat ik later wil worden? Eigenlijk heb ik geen idee. Ik ben steeds op zoek naar een nieuwe uitdaging die mij voldoende weet te prikkelen. Mijn gevoel zegt mij dat ik dit binnen de IT ga vinden.</p>",
       "<p>Ik ben zeer gedreven en wil graag bijleren. Het geeft mij een kick als ik processen kan verbeteren. Ik werk nauwkeurig en zorg dat alles op tijd af is. </p>",
       "<p>Verder zoek ik leuke collegas die ook buiten werktijden zo nu en dan wat leuks doen samen.</p>"
