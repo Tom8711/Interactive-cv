@@ -99,8 +99,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
   cvoverworld : {
-    lowerSrc : "images/maps/cvoverworld.png",
-    upperSrc : "images/maps/CVoverworldupperpng.png",
+    lowerSrc : "./images/maps/cvoverworld.png",
+    upperSrc : "./images/maps/CVoverworldupperpng.png",
     gameObjects : {
       hero : new Person({
         x : utils.withGrid(15),
@@ -110,7 +110,7 @@ window.OverworldMaps = {
       npcA : new Person({
         x : utils.withGrid(10),
         y : utils.withGrid(10),
-        src : "/images/characters/people/npc1.png",
+        src : "./images/characters/people/npc1.png",
         // behaviorLoop: [
         //   {type : "walk", direction : "left"},
         //   // {type : "stand", direction : "up", time: 800},
@@ -131,7 +131,7 @@ window.OverworldMaps = {
       npcD : new Person({
         x : utils.withGrid(32),
         y : utils.withGrid(12),
-        src : "/images/characters/people/npc3.png",
+        src : "./images/characters/people/npc3.png",
         // behaviorLoop: [
         //   {type : "walk", direction : "left"},
         //   // {type : "stand", direction : "up", time: 800},
@@ -184,7 +184,7 @@ window.OverworldMaps = {
     }
   },
   museum : {
-    lowerSrc : "/images/maps/museum.png",
+    lowerSrc : "./images/maps/museum.png",
     upperSrc: "",
     gameObjects: {
       hero: new Person({
@@ -195,7 +195,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(10),
         y: utils.withGrid(9),
-        src: "/images/characters/people/npc3.png",
+        src: "./images/characters/people/npc3.png",
         // behaviorLoop: [
         //   {type : "walk", direction : "left"},
         //   {type : "stand", direction : "up", time: 800},
@@ -226,8 +226,8 @@ window.OverworldMaps = {
     }
   },
   room1 : {
-    lowerSrc : "images/maps/room1.png",
-    upperSrc : "images/maps/room1upper.png",
+    lowerSrc : "./images/maps/room1.png",
+    upperSrc : "./images/maps/room1upper.png",
     gameObjects : {
       hero : new Person({
         x : utils.withGrid(5),
@@ -237,7 +237,7 @@ window.OverworldMaps = {
       npcC : new Person({
         x : utils.withGrid(9),
         y : utils.withGrid(8),
-        src : "/images/characters/people/npc2.png",
+        src : "./images/characters/people/npc2.png",
         // behaviorLoop: [
         //   {type : "walk", direction : "left"},
         //   {type : "stand", direction : "up", time: 800},

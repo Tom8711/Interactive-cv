@@ -66,7 +66,6 @@ class Overworld {
 
   init() {
     this.startMap(window.OverworldMaps.cvoverworld);
-    console.log(window.Walls.cvOverworld)
 
     this.bindActionInput();
     this.bindHeroPositionCheck();
