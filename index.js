@@ -46,6 +46,9 @@ function generateCv(){
   document.getElementById("text-in").innerHTML =`\
   <div id='scroll-to' class="container-cv">\
     <embed src="image/cv.pdf" type="application/pdf" width="100%" height="1200px" />\
+  </div>\
+  <div class='text-center'>\
+    <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
   </div>`
 
   setTimeout(()=>{
