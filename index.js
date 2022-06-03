@@ -119,39 +119,41 @@ function generateTextOverMij(){
   })
 }
 
-function generateTextInter(){
-  fetch("./data.json")
-  .then(response => {
-    return response.json();
-  })
-  .then(jsondata => {
-    document.getElementById("text-in").innerHTML =`\ 
-    <div class="container-fluid bg-light">\
-      <div class="row">\
-        <div class="col-xl-6 col-lg-6 col-md-6" >\
-          <img src="${jsondata.interesses.foto}" alt="Plaatje laad niet" class="img-fluid">\
-        </div>\
-        <div class="col-xl-6 col-lg-6 col-md-6" style='height:23.7cm'>\
-          ${jsondata.interesses.tekst.join('\n')}\
-          <a href='#top'><button type='button'>Scroll naar boven</button></a>\
-        </div>\
-      </div>\
-    </div>`
-  })
-  .then(()=>{
-    setTimeout(()=>{
-    document.getElementById("scroll-to").scrollIntoView();
-  }, 100)
-  })
+function getGame(){
+  window.location = "./cv_game/index.html"
+  // document.getElementById("text-in").innerHTML ='<object type="text/html" data="./cv_game/index.html" ></object>';
+  // fetch("./data.json")
+  // .then(response => {
+  //   return response.json();
+  // })
+  // .then(jsondata => {
+  //   document.getElementById("text-in").innerHTML =`\ 
+  //   <div class="container-fluid bg-light">\
+  //     <div class="row">\
+  //       <div class="col-xl-6 col-lg-6 col-md-6" >\
+  //         <img src="${jsondata.interesses.foto}" alt="Plaatje laad niet" class="img-fluid">\
+  //       </div>\
+  //       <div class="col-xl-6 col-lg-6 col-md-6" style='height:23.7cm'>\
+  //         ${jsondata.interesses.tekst.join('\n')}\
+  //         <a href='#top'><button type='button'>Scroll naar boven</button></a>\
+  //       </div>\
+  //     </div>\
+  //   </div>`
+  // })
+  // .then(()=>{
+  //   setTimeout(()=>{
+  //   document.getElementById("scroll-to").scrollIntoView();
+  // }, 100)
+  // })
 }
 
 function west(){
   document.getElementById("img-tom").src = "/image/09_Tom.png"
 }
 
-// function northwest(){
-//   document.getElementById("img-tom").src = "/image/01_Tom.png"
-// }
+function northwest(){
+  document.getElementById("img-tom").src = "/image/01_Tom.png"
+}
 
 function north(){
   document.getElementById("img-tom").src = "/image/03_Tom.png"
