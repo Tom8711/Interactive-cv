@@ -51,10 +51,6 @@ function generateCv(){
     <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
   </div>`
 
-  setTimeout(()=>{
-    window.scrollTo(120, document.body.scrollHeight);
-}, 100)
-
     setTimeout(()=>{
     document.getElementById("scroll-to").scrollIntoView();
   }, 100)
@@ -70,7 +66,7 @@ function generateTextWerk(){
     document.getElementById("text-in").innerHTML =`\
     <div class="container-fluid bg-light">\
       <div class="row">\
-          <img src="${jsondata.werk.foto}" alt="Plaatje laad niet" class="img-fluid" style="padding-top:2cm">\
+          <img id="scroll-to" src="${jsondata.werk.foto}" alt="Plaatje laad niet" class="img-fluid" style="padding-top:2cm">\
           <div class='text-center'>\
             <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
           </div>\
@@ -79,7 +75,7 @@ function generateTextWerk(){
   })
   .then(()=>{
     setTimeout(()=>{
-      window.scrollTo(0, document.body.scrollHeight);
+    document.getElementById("scroll-to").scrollIntoView();
   }, 100)
   })
 }
