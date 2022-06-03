@@ -42,30 +42,20 @@ function generateTextPort(){
   })
 }
 
-function generateTextIt(){
-  fetch("./data.json")
-  .then(response => {
-    return response.json();
-  })
-  .then(jsondata => {
-    document.getElementById("text-in").innerHTML =`\ 
-    <div class="container-fluid bg-light">\
-      <div class="row">\
-        <div class="col">\
-          <img src="${jsondata.portfolio.foto}" alt="Plaatje laad niet" class="img-fluid" >\
-        </div>\
-        <div class="col" style='height:23.7cm'>\
-          ${jsondata.it.tekst.join('\n')}\
-          <a href='#top'><button type='button'>Scroll naar boven</button></a>\
-        </div>\
-      </div>\
-    </div>`
-  })
-  .then(()=>{
+function generateCv(){
+  document.getElementById("text-in").innerHTML =`\
+  <div id='scroll-to' class="container-cv">\
+    <embed src="image/cv.pdf" type="application/pdf" width="100%" height="1200px" />\
+  </div>`
+
+  setTimeout(()=>{
+    window.scrollTo(120, document.body.scrollHeight);
+}, 100)
+
     setTimeout(()=>{
     document.getElementById("scroll-to").scrollIntoView();
   }, 100)
-  })
+  
 }
 
 function generateTextWerk(){
@@ -159,9 +149,9 @@ function north(){
   document.getElementById("img-tom").src = "/image/03_Tom.png"
 }
 
-// function northeast(){
-//   document.getElementById("img-tom").src = "/image/05_Tom.png"
-// }
+function northeast(){
+  document.getElementById("img-tom").src = "/image/05_Tom.png"
+}
 
 function east(){
   document.getElementById("img-tom").src = "/image/08_Tom.png"
