@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+.card {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  padding: 8px;
+  
+}
+
+.top-row {
+  display:flex;
+  margin: auto;
+  width: 1290px;
+  min-width: 1290px;
+  padding-top: 30px;
+  
+}
+
+.bottom-row {
+  display:flex;
+  margin: auto;
+  width: 1290px;
+  min-width: 1290px;
+  padding-bottom: 65px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:530;
+  cursor: pointer;
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  font-family: "Arial", Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+}
+
+.generated-text {
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  display:flex;
+  min-width: 1290px;
+  width: 1290px;
+  margin:auto;
+  padding-top: 20px;
+  height: fit-content;
+}
+
+.box {
+  position: relative;
+  width: 645px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+
+}
+
+.box img {
+  width: 625px;
+}
+
+.text-box {
+  position: relative;
+  width: 615px;
+  float:left;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: "Arial", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+

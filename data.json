@@ -4,9 +4,9 @@
     "foto2":"/image/knights2.png",
     "foto3":"/image/alien2.png",
     "tekst1":[
-      "<h1 id='scroll-to'>Wasteless</h1><p>Deze webapp laat gebruikers een voorraadkast van boodschappen bijhouden. Heb je iets niet meer nodig of dreigt het te bederven?",
+      "<h1>Wasteless</h1><p>Deze webapp laat gebruikers een voorraadkast van boodschappen bijhouden. Heb je iets niet meer nodig of dreigt het te bederven?",
       "Met een druk op de knop kan je deze aanbieden aan andere gebruikers!</p><p>Deze full-stack applicatie is in team verband in een paar sprints gebouwd tijdens de bootcamp",
-      "van het Young Capital traineeship. De frontend is geschreven in html/javascript, de back-end in java met het spring framework die een koppeling maakt naar een mySQL server.</p>",
+      "van het Young Capital traineeship. De frontend is geschreven in html/javascript, de back-end in java met het spring framework die een koppeling maakt naar een mySQL database.</p>",
       "<p><a href='https://github.com/Tom8711/yc2202wasteless_frontend.git'>Github: Wasteless frontend</a></p>",
       "<p><a href='https://github.com/Tom8711/yc2202wasteless.git'>Github: Wasteless backend</a></p>" 
     ],
@@ -27,31 +27,30 @@
   "it":{
     "foto":"/image/klimtom.jpg",
     "tekst":[
-      "<h1 id='scroll-to'>IT titel</h1>",
+      "<h1>IT titel</h1>",
       "<p>Hier komt tekst over mijn it bestaan</p>"
     ]
   },
   "werk":{
     "foto":"/image/tijdlijn.png",
     "tekst":[
-      "<h1 id='scroll-to'>werk titel</h1>",
+      "<h1>werk titel</h1>",
       "<p>Lekker werken hoor!</p>"
     ]
   },
   "overmij":{
     "foto":"/image/mijnklasse.png",
     "tekst":[
-      "<h1 id='scroll-to'>Over mijzelf</h1>",
-      "<p>Ik ben Tom.</p><p>Hiernaast staat een klasse diagram met enkele kenmerken van mij.</p>",
-      "<p>Wat ik later wil worden? Eigenlijk heb ik geen idee. Ik ben steeds op zoek naar een nieuwe uitdaging die mij voldoende weet te prikkelen. Mijn gevoel zegt mij dat ik dit binnen de IT ga vinden.</p>",
-      "<p>Ik ben zeer gedreven en wil graag bijleren. Het geeft mij een kick als ik processen kan verbeteren. Ik werk nauwkeurig en zorg dat alles op tijd af is. </p>",
-      "<p>Verder zoek ik leuke collegas die ook buiten werktijden zo nu en dan wat leuks doen samen.</p>"
+      "<h1 id='scroll-to'>Over mij</h1>",
+      "<p>Wat mij motiveert? Ik los graag problemen op waardoor anderen verder komen. Ik ben steeds op zoek naar een nieuwe uitdaging die mij voldoende weet te prikkelen. Mijn gevoel zegt mij dat ik dit binnen de IT ga vinden.</p>",
+      "<p>Momenteel ben ik op zoek naar een functie waarbij ik mijn IT kwaliteiten verder kan ontwikkelen. Mijn primaire focus ligt op een functie waarbij functioneel/aplicatie beheer centraal ligt. Echter is elke funtie uniek en ik sta open om te ontdekken of een andere functie bij me past.</p>",
+      "<p>Ik ben zeer gedreven en wil graag bijleren. Het geeft mij een kick als ik processen kan verbeteren. Ik werk nauwkeurig en zorg dat alles op tijd af is. </p>"
     ]
   },
   "skills":{
     "foto":"/image/klimtom.jpg",
     "tekst":[
-      "<h1 id='scroll-to'>Misschien interesses?</h1>",
+      "<h1>Misschien interesses?</h1>",
       "<p>Wat vind ik leuke onderwerpen???</p>"
     ]
   }

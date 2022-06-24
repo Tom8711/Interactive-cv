@@ -5,34 +5,34 @@ function generateTextPort(){
   })
   .then(jsondata => {
     document.getElementById("text-in").innerHTML =`\
-    <div class="container-fluid bg-light">\
+    <div class="generated-text">\
       <div class="row">\
-        <div class="col">\
-          <img src="${jsondata.portfolio.foto1}" alt="Plaatje laad niet" class="img-fluid">\
+        <div id="scroll-to" class="box">\
+          <img src="${jsondata.portfolio.foto1}" alt="Plaatje laad niet">\
         </div>\
-        <div class="col">\
+        <div class="text-box">\
           ${jsondata.portfolio.tekst1.join('\n')}\
+        </div>\
       </div>\
       <hr>\
       <div class="row">\
-        <div class="col">\
+        <div class="text-box">\
           ${jsondata.portfolio.tekst2.join('\n')}\
         </div>\
-        <div class="col">\
-          <img src="${jsondata.portfolio.foto2}" alt="Plaatje laad niet" class="img-fluid" style="padding:1cm">\ 
+        <div class="box">\
+          <img src="${jsondata.portfolio.foto2}" alt="Plaatje laad niet">\ 
         </div>\
       </div>\
       <hr>\
       <div class="row">\
-        <div class="col">\
-          <img src="${jsondata.portfolio.foto3}" alt="Plaatje laad niet" class="img-fluid" style="padding:1cm">\
+        <div class="box">\
+          <img src="${jsondata.portfolio.foto3}" alt="Plaatje laad niet">\
         </div>\
-        <div class="col">\
+        <div class="text-box">\
           ${jsondata.portfolio.tekst3.join('\n')}\
+        </div>\
       </div>\
-      <div class='text-center'>\
-        <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
-      </div>\
+        <a href='#top'><button type='button' class="button" onclick="center()">Scroll naar boven</button></a>\
     </div>`
   })
   .then(()=>{
@@ -44,11 +44,11 @@ function generateTextPort(){
 
 function generateCv(){
   document.getElementById("text-in").innerHTML =`\
-  <div id='scroll-to' class="container-cv">\
+  <div id='scroll-to'>\
     <embed src="image/cv.pdf" type="application/pdf" width="100%" height="1200px" />\
   </div>\
-  <div class='text-center'>\
-    <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
+  <div class='generated-text'>\
+    <a href='#top'><button type='button' class="button" onclick="center()">Scroll naar boven</button></a>\
   </div>`
 
     setTimeout(()=>{
@@ -64,12 +64,10 @@ function generateTextWerk(){
   })
   .then(jsondata => {
     document.getElementById("text-in").innerHTML =`\
-    <div class="container-fluid bg-light">\
-      <div class="row">\
-          <img id="scroll-to" src="${jsondata.werk.foto}" alt="Plaatje laad niet" class="img-fluid" style="padding-top:2cm">\
-          <div class='text-center'>\
-            <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
-          </div>\
+    <div class="generated-text" style=padding-top:20px>\
+      <img id="scroll-to" src="${jsondata.werk.foto}" alt="Plaatje laad niet" style="width:1500px">\   
+      <div>\
+        <a href='#top'><button type='button' class="button" onclick="center()">Scroll naar boven</button></a>\  
       </div>\
     </div>`
   })
@@ -87,18 +85,18 @@ function generateTextOverMij(){
   })
   .then(jsondata => {
     document.getElementById("text-in").innerHTML =`\
-    <div class="container-fluid bg-light">\
+    <div class="generated-text">\
       <div class="row">\
-        <div class="col">\
-          <img src="${jsondata.overmij.foto}" alt="Plaatje laad niet" class="img-fluid" style="padding-left:3cm">\
-        </div>\
-        <div class="col">\
+        <div class="box">\
+          <img src="${jsondata.overmij.foto}" alt="Plaatje laad niet" style="image-rendering: pixelated">\
+        </div>
+        <div class="text-box">\
           ${jsondata.overmij.tekst.join('\n')}\
         </div>\
-        <div class='text-center'>\
-          <a href='#top'><button type='button' class="btn btn-success btn-lg" onclick="happy()">Scroll naar boven</button></a>\
-        </div>\
       </div>\
+      <div>\
+        <a href='#top'><button type='button' class="button" onclick="center()">Scroll naar boven</button></a>\
+      </div>\  
     </div>`
   })
   .then(()=>{
@@ -156,6 +154,6 @@ function east(){
   document.getElementById("img-tom").src = "/image/08_Tom.png"
 }
 
-function happy(){
+function center(){
   document.getElementById("img-tom").src = "/image/11_Tom.png"
 }
